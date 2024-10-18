@@ -1,0 +1,22 @@
+<svg width="147" height="147" viewBox="0 0 147 147" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g filter="url(#filter0_d_33_382)">
+<circle cx="73.5" cy="69.5" r="69.5" fill="#231C1B"/>
+</g>
+<rect x="45" y="46" width="56" height="43" fill="url(#pattern0_33_382)"/>
+<defs>
+<filter id="filter0_d_33_382" x="0" y="0" width="147" height="147" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_33_382"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_33_382" result="shape"/>
+</filter>
+<pattern id="pattern0_33_382" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_33_382" transform="scale(0.0178571 0.0232558)"/>
+</pattern>
+<image id="image0_33_382" width="56" height="43" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAArCAMAAAAaGrsZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABgUExURQAAAP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////3wlHLoAAAAfdFJOUwAIEBgoMDhASFBYYGhweICHj5efp6+3v8fP19/n7/d8VveYAAAACXBIWXMAABcRAAAXEQHKJvM/AAABUUlEQVRIS92W4XKCMBCEQ9VGa4FWClEE8v5v6eVyGMAjXjrtTKffr5DZJVyyBygky7+MkKZ48R7HtrUJdK9kU+pMU0K6cc0DXJxLITWISzKWcBMaCmisrWlYWVvRUAAsY2gYjDpSbfvmNazRkIiFymGNV9LweM2asabdWwCaJ8ajHy3Rv2f80Cz5U2MEr2GN0bAPXsMa3wcScZy8hjVK+CNGfaF6xkzvQuovGiW8cRpyzDQ0350rSnjj7BzdRHgCa3uUrBqrWaaPk/MpULJq9JWEaD7w48Z8kekH1owBN7EP6W2p4VjjNOSY6emdoiEnjQMzXdCF45+EXMJo3Famg0TTZ1MAbHRvaj2LcQLdd429K7DDhkgAurvBM99h1WI2vfsoZ7A1Dc0IOUH8Nkq5RiixJYS4Z/wEf5b0r+LpYUE4ydjrm+fgfNB0UGYKQ6GUugGeBYb+f03KdAAAAABJRU5ErkJggg=="/>
+</defs>
+</svg>
