@@ -15,9 +15,9 @@ export default function ExperiencePage() {
           {/* === Kiri end === */}
           <div className="relative flex flex-col items-center justify-start gap-20 ml-64 ">
             <hr className="absolute z-10 rotate-90 border-2 border-black top-40 w-72" />
-            <div className="z-20 border-8 rounded-full p-7 border-darkBrown bg-lightPrimary" />
-            <div className="z-20 border-8 rounded-full p-7 border-lightBrown bg-lightPrimary" />
-            <div className="z-20 border-8 rounded-full p-7 border-darkBlue bg-lightPrimary" />
+            <div className="z-20 duration-300 border-8 rounded-full p-7 border-darkBrown bg-lightPrimary hover:scale-110" />
+            <div className="z-20 duration-300 border-8 rounded-full p-7 border-lightBrown bg-lightPrimary hover:scale-110" />
+            <div className="z-20 duration-300 border-8 rounded-full p-7 border-darkBlue bg-lightPrimary hover:scale-110" />
           </div>
           {/* === Kanan start === */}
           <div className="flex-1 ml-10">

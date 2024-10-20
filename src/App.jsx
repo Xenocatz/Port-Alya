@@ -1,6 +1,7 @@
 import Navigation from "./component/layout/navigation";
 import ExperiencePage from "./pages/experience";
 import HeroSection from "./pages/hero section";
+import ProjectPage from "./pages/projectpage";
 import ServicePage from "./pages/service-page";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <HeroSection />
       <ServicePage />
       <ExperiencePage />
+      <ProjectPage />
     </>
   );
 }
