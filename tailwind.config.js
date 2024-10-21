@@ -14,6 +14,7 @@ export default {
         lightBrown: "#534D14",
         darkBlue: "#20304D",
         Blue: "#344265",
+        bgSecondary: "#626F47",
       },
       boxShadow: {
         shadow: "-4px 2px 33px 24px rgba(0,0,0,0.27)",
