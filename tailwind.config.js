@@ -18,6 +18,7 @@ export default {
       },
       boxShadow: {
         shadow: "-4px 2px 33px 24px rgba(0,0,0,0.27)",
+        mobileShadow: "3px 1px 25px 0px rgba(0,0,0,0.75)",
       },
     },
   },

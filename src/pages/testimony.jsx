@@ -9,11 +9,14 @@ import avatar3 from "../assets/svg icon/Group 15.svg";
 
 export default function TestimonyPage() {
   return (
-    <section className=" font-poppins bg-bgSecondary">
-      <h1 className="pt-20 text-6xl font-semibold text-center text-lightPrimary">
+    <section
+      id="testimony"
+      className="overflow-hidden font-poppins bg-bgSecondary"
+    >
+      <h1 className="pt-20 text-4xl font-semibold text-center lg:text-6xl text-lightPrimary">
         People Talk About Me
       </h1>
-      <div className="flex items-center justify-center gap-20 mt-20 ">
+      <div className="flex items-center w-full gap-5 px-10 py-16 mt-20 overflow-x-auto lg:justify-center lg:overflow-visible lg:py-0 lg:gap-20 lg:px-0">
         <Testimony
           avatar={avatar1}
           text="“If you accept the expectations of others, especially negative ones, then you never will change the outcome”"
@@ -31,10 +34,10 @@ export default function TestimonyPage() {
         />
       </div>
       <div className="flex flex-col items-center justify-center mt-20">
-        <h3 className="text-3xl font-semibold text-lightPrimary">
+        <h3 className="text-xl font-semibold lg:text-3xl text-lightPrimary">
           Tools & Skills
         </h3>
-        <div className="flex gap-20 mt-10 mb-32">
+        <div className="flex flex-wrap justify-center mt-10 mb-32 gap-y-10 gap-x-16 lg:gap-20">
           <img
             src={figma}
             alt="figma"
@@ -45,24 +48,24 @@ export default function TestimonyPage() {
             src={adobeIllustrator}
             alt="adobeIllustrator"
             title="adobeIllustrator"
-            className="w-16 duration-300 rounded-xl hover:scale-125 "
+            className="w-16 duration-300 rounded-xl hover:scale-125"
           />
           <img
             src={capcut}
             alt="capcut"
             title="capcut"
-            className="w-16 duration-300 rounded-xl hover:scale-125 "
+            className="w-16 duration-300 rounded-xl hover:scale-125"
           />
           <img
             src={photoshop}
             alt="photoshop"
             title="photoshop"
-            className="w-16 duration-300 rounded-xl hover:scale-125 "
+            className="w-16 duration-300 hover:scale-125"
           />
           <img
             src={gatau}
             alt=""
-            className="w-16 duration-300 rounded-xl hover:scale-125 "
+            className="w-16 duration-300 rounded-xl hover:scale-125"
           />
         </div>
       </div>
@@ -72,11 +75,17 @@ export default function TestimonyPage() {
 
 const Testimony = ({ avatar, text, nama }) => {
   return (
-    <div className="relative flex flex-col items-center w-1/4 px-5 pt-10 bg-white rounded-3xl shadow-shadow">
-      <img src={avatar} alt="" className="absolute w-32 left-1/3 -top-16" />
-      <p className="text-lg font-semibold text-center text-black">{text}</p>
+    <div className="relative flex flex-col items-center px-5 pt-10 bg-white lg:w-1/4 rounded-3xl shadow-shadow min-w-52">
+      <img
+        src={avatar}
+        alt=""
+        className="absolute w-28 lg:w-32 lg:left-1/3 left-14 -top-16"
+      />
+      <p className="text-xs font-semibold text-center text-black lg:text-lg">
+        {text}
+      </p>
       <hr className="w-full border-2 border-lightBrown" />
-      <h4 className="py-2 text-xl font-semibold text-bgSecondary">{nama}</h4>
+      <h4 className="py-2 font-semibold lg:text-xl text-bgSecondary">{nama}</h4>
     </div>
   );
 };
