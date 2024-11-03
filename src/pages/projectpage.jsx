@@ -2,30 +2,73 @@ import iconMail from "../assets/svg icon/image 5.svg";
 import project1 from "../assets/png/Group 3.png";
 import project2 from "../assets/png/Group 12.png";
 import project3 from "../assets/png/Group 13.png";
+import { motion } from "framer-motion";
+
 export default function ProjectPage() {
+  const fadeInVariants = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.5,
+        delayChildren: 0.5,
+      },
+    },
+  };
+
+  const fadeInItems = {
+    hidden: { opacity: 0, y: 20 },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        ease: "easeInOut",
+      },
+    },
+  };
   return (
     <div
       id="project"
       className="flex flex-col items-center py-16 overflow-hidden bg-lightPrimary font-poppins"
     >
-      <h1 className="text-4xl font-bold text-center lg:font-semibold lg:text-6xl text-darkPrimary">
+      <motion.h1
+        initial={{ opacity: 0, x: 20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
+        viewport={{ once: true }}
+        className="text-4xl font-bold text-center lg:font-semibold lg:text-6xl text-darkPrimary"
+      >
         My Projects
-      </h1>
+      </motion.h1>
 
       {/* === Project start === */}
-      <section className="flex flex-wrap items-center justify-center p-10 lg:overflow-x-auto lg:py-20 lg:gap-16 lg:flex-nowrap">
+      <motion.section
+        variants={fadeInVariants}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        className="flex flex-wrap items-center justify-center p-10 lg:overflow-x-auto lg:py-20 lg:gap-16 lg:flex-nowrap"
+      >
         <ContainerProject
           header="Rebranding"
           className="bg-Brown"
           src={project1}
+          variants={fadeInItems}
         />
         <ContainerProject
           header="Photografi"
           className="bg-darkPrimary"
           src={project2}
+          variants={fadeInItems}
         />
-        <ContainerProject header="Spanduk" className="bg-Blue" src={project3} />
-      </section>
+        <ContainerProject
+          header="Spanduk"
+          className="bg-Blue"
+          src={project3}
+          variants={fadeInItems}
+        />
+      </motion.section>
       {/* === Project end === */}
 
       <div className="flex items-center justify-center w-11/12 gap-2 p-3 mt-10 lg:w-10/12 lg:px-8 lg:py-5 bg-Blue">
@@ -46,9 +89,12 @@ export default function ProjectPage() {
   );
 }
 
-const ContainerProject = ({ header, className, src, img }) => {
+const ContainerProject = ({ header, className, src, img, variants }) => {
   return (
-    <div className="flex flex-col items-center justify-center scale-90 lg:scale-100">
+    <motion.div
+      variants={variants}
+      className="flex flex-col items-center justify-center scale-90 lg:scale-100"
+    >
       <h3 className="text-2xl font-semibold lg:text-base text-lightBrown">
         {header}
       </h3>
@@ -57,6 +103,6 @@ const ContainerProject = ({ header, className, src, img }) => {
       >
         <img src={src} alt="" className={`${img}`} />
       </div>
-    </div>
+    </motion.div>
   );
 };

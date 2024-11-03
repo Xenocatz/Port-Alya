@@ -5,7 +5,7 @@ import iconYT from "../assets/svg icon/image 6.svg";
 import iconIG from "../assets/svg icon/image 9.svg";
 import iconWA from "../assets/svg icon/image 8.svg";
 import illustBintang from "../assets/svg/Group 1.svg";
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const containerVariants = {
   hidden: { opacity: 0 },

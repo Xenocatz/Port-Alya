@@ -91,9 +91,7 @@ export default function Navigation() {
       </motion.div>
       <nav>
         <motion.ul
-          className={`gap-5 lg:flex lg:flex-row-reverse text-slate-200 bg-lightPrimary lg:bg-transparent px-2 py-5 lg:p-0 rounded-xl shadow-2xl lg:shadow-none border border-darkPrimary lg:border-none  ${
-            isOpen ? "flex flex-col" : "hidden"
-          } `}
+          className={`gap-5 lg:flex lg:flex-row-reverse text-slate-200 bg-lightPrimary lg:bg-transparent px-2 py-5 lg:p-0 rounded-xl shadow-2xl lg:shadow-none border border-darkPrimary lg:border-none  flex flex-col  `}
           variants={isMobile ? mobileVariants : containerVariants}
           initial={isMobile ? "closed" : "hidden"}
           animate={isMobile ? (isOpen ? "open" : "closed") : "visible"}
@@ -151,4 +149,3 @@ const NavList = ({ nama, href, onClick, ...props }) => {
     </motion.li>
   );
 };
-// const MotionNavlist = motion(NavList);
